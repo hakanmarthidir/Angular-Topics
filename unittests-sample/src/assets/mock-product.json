@@ -1,0 +1,7 @@
+[
+    { "productId": 1, "productName": "xbox", "productCount": "23" },
+    { "productId": 2, "productName": "ps4", "productCount": "50" },
+    { "productId": 3, "productName": "wii", "productCount": "40" }
+]
+
+
