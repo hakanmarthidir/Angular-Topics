@@ -9,7 +9,7 @@ describe('ProductsComponent Isolated', () => {
 
     let component: ProductsComponent;
     let mockProductService;
-    let mockProducts: IProduct[];
+    //let mockProducts: IProduct[];
     let mockActivatedRoute;
 
     beforeEach(() => {
@@ -42,11 +42,9 @@ describe('ProductsComponent Isolated', () => {
     });
 
     it('should be correct firstname of array', () => {
-        //Arrange 
-        mockProductService.getProducts.and.returnValue(mockProducts);
-        //Act 
+        
+        //mockProductService.getProducts.and.returnValue(mockProducts);
         component.getProducts();
-        //Assert
         //IF Observable Use This :  component.products.subscribe((result) => { expect(result.length).toBe(3);});
         expect(component.products[0].productName).toEqual("xbox");
     });
