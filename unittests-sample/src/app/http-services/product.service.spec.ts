@@ -28,7 +28,7 @@ describe('Product Service Isolated Test', () => {
 
     });
 
-    it('shoul have been called', () => {
+    it('should have been called', () => {
 
         mockHttpClient.get.and.returnValue(mockProducts);
         productService.getProducts();
