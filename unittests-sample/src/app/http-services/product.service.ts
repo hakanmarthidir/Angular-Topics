@@ -11,11 +11,11 @@ export class ProductService {
   constructor(private http: HttpClient) {
   }
 
-  productsLocal = 'assets/mock-product.json';
+  productsLocal = '/assets/mock-product.json';
 
   // getProducts(): Observable<IProduct[]> {
   //   return this.http.get<IProduct[]>('/api/products')
-  //     .pipe(catchError(this.handleError<IProduct[]>('getProducts', [])))
+  //     .pipe(catchError(this.handleError<IProduct[]>('getProducts', [])));
   // }
 
   getProducts(): Observable<IProduct[]> {

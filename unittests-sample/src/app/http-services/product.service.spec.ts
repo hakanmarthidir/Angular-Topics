@@ -2,7 +2,8 @@ import { ProductService } from './product.service';
 import { Observable, of } from 'rxjs';
 import { IProduct } from '../models/IProduct';
 
-describe('Http Service Test', () => {
+
+describe('Product Service Isolated Test', () => {
 
     let productService: ProductService;
     let mockHttpClient;
