@@ -1,0 +1,7 @@
+<h3>Products</h3>
+<ul>
+  <li *ngFor="let p of products">
+    <h3>{{p.productId}} - {{p.productName}}</h3>
+    <app-childoutput [productId] = "p.productId" (buyed) = "afterProductClicked($event)"></app-childoutput>
+  </li>
+</ul>

@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ParentComponent } from './interaction-sample/parent/parent.component';
+
 import { ParentchangeComponent } from './interaction-ngonchange-sample/parentchange/parentchange.component';
+import { ParentoutputComponent } from './interaction-output-sample/parentoutput/parentoutput.component';
+import { ParentinputComponent } from './interaction-input-sample/parentinput/parentinput.component';
 
 const routes: Routes = [
-{ path: 'parent', component: ParentComponent },
-{ path: 'parentchange', component: ParentchangeComponent }
+{ path: 'parentinput', component: ParentinputComponent },
+{ path: 'parentchange', component: ParentchangeComponent },
+{ path: 'parentoutput', component: ParentoutputComponent },
 ];
 
 @NgModule({
