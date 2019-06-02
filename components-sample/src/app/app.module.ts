@@ -11,6 +11,8 @@ import { ParentinputComponent } from './interaction-input-sample/parentinput/par
 import { ChildinputComponent } from './interaction-input-sample/childinput/childinput.component';
 import { ParentlocalComponent } from './interaction-parent-child-localvariable/parentlocal/parentlocal.component';
 import { ChildlocalComponent } from './interaction-parent-child-localvariable/childlocal/childlocal.component';
+import { ChildviewComponent } from './interaction-with-viewchild/childview/childview.component';
+import { ParentviewComponent } from './interaction-with-viewchild/parentview/parentview.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { ChildlocalComponent } from './interaction-parent-child-localvariable/ch
     ParentoutputComponent,
     ChildoutputComponent,
     ParentlocalComponent,
-    ChildlocalComponent
+    ChildlocalComponent,
+    ChildviewComponent,
+    ParentviewComponent
   ],
   imports: [
     BrowserModule,
