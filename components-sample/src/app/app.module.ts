@@ -13,6 +13,9 @@ import { ParentlocalComponent } from './interaction-parent-child-localvariable/p
 import { ChildlocalComponent } from './interaction-parent-child-localvariable/childlocal/childlocal.component';
 import { ChildviewComponent } from './interaction-with-viewchild/childview/childview.component';
 import { ParentviewComponent } from './interaction-with-viewchild/parentview/parentview.component';
+import { ChildserviceComponent } from './interaction-via-services/childservice/childservice.component';
+import { ParentserviceComponent } from './interaction-via-services/parentservice/parentservice.component';
+import { CardService } from './interaction-via-services/service/card.service';
 
 
 @NgModule({
@@ -27,13 +30,15 @@ import { ParentviewComponent } from './interaction-with-viewchild/parentview/par
     ParentlocalComponent,
     ChildlocalComponent,
     ChildviewComponent,
-    ParentviewComponent
+    ParentviewComponent,
+    ChildserviceComponent,
+    ParentserviceComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [CardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

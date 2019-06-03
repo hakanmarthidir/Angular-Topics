@@ -1,0 +1,4 @@
+<p>
+  <button (click)="giveCard()">Give Cards</button>
+  <app-childservice *ngFor="let player of playerList" [player]="player"></app-childservice>
+</p>
